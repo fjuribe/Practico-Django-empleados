@@ -7,5 +7,12 @@ class Departamento(models.Model):
     anulate=models.BooleanField('Anulado',default=False)
     # FIELDNAME=models.DateField(,auto_now=False,auto_now_add=False)
 
+    class Meta:
+        verbose_name='Mi departamento'
+        verbose_name_plural='Areas de la empresa'
+        ordering=['-name']
+        unique_together=('name','shor_name')
+
+
     def __str__(self):
         return str(self.id)+'-'+self.name+'-'+self.shor_name
