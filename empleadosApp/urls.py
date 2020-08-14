@@ -20,6 +20,7 @@ from django.urls import path,re_path,include
 #1 forma 1
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
 
 #2  incluimos las urls de las app departamento y empleado
     re_path('',include('applications.departamento.urls')),
