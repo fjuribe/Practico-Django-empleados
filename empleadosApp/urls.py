@@ -25,5 +25,6 @@ urlpatterns = [
 #2  incluimos las urls de las app departamento y empleado
     re_path('',include('applications.departamento.urls')),
     re_path('',include('applications.home.urls')),
-    re_path('',include('applications.empleado.urls'))
+    re_path('',include('applications.empleado.urls')),
+    re_path('',include('applications.persona.urls')),
 ]
